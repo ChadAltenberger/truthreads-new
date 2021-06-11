@@ -1,0 +1,155 @@
+/* Text Colors */
+.text-primary {
+	color: #f06239;
+}
+
+.text-secondary {
+	color: #14a2b8;
+}
+
+.text-light {
+	color: #fff;
+}
+
+/* Button */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.6rem 1.3rem;
+	color: #fff;
+	background: #f06239;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+/* Button/Backgrounds */
+.btn-primary,
+.bg-primary {
+	background: #f06239;
+	color: #fff;
+}
+.btn-secondary,
+.bg-secondary {
+	background: #14a2b8;
+	color: #fff;
+}
+.btn-dark,
+.bg-dark {
+	background: #333;
+	color: #fff;
+}
+.btn-light,
+.bg-light {
+	background: #f9f9f9;
+	color: #333;
+}
+
+/* Flex Items */
+.flex-items {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: start;
+	height: 100%;
+}
+
+.flex-items > div {
+	padding: 1.2rem;
+	width: 33.3%;
+}
+
+/* Flex Columns */
+.flex-columns.flex-reverse .row {
+	flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.flex-columns .column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+	height: 100%;
+}
+
+.flex-columns img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.flex-columns .column-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.flex-columns h1 {
+	font-size: 2.8rem;
+}
+
+.flex-columns h2 {
+	font-size: 2.5rem;
+	font-weight: 100;
+	margin-bottom: 0.6rem;
+}
+
+.flex-columns p {
+	margin: 1.25rem 0;
+}
+
+/* Section Header */
+.section-header {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.section-header h2 {
+	font-size: 40px;
+	margin: 20px 0;
+}
+
+/* Section Padding */
+.section-padding {
+	padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0.25rem;
+}
+
+.flex-grid .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 0.25rem;
+}
+
+.flex-grid img {
+	border-radius: 5px;
+}
+
+.flex-grid .column img {
+	height: 50%;
+}

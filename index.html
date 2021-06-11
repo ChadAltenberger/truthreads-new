@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/lightbox.min.css" />
+		<link rel="stylesheet" href="./css/utilities.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Custom Screen Printing | Truthreads Harrisonburg VA</title>
+		<script src="./js/app.js" defer></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script src="./js/lightbox.min.js" defer></script>
+	</head>
+	<body id="home">
+		<!-- Navbar -->
+		<header class="hero">
+			<div id="navbar" class="navbar top mobile">
+				<a class="logo" href="#home"
+					><img src="images/logo.png" alt="Truthreads Logo"
+				/></a>
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#featured">Featured</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Payment Modal -->
+			<div id="modal-bg" class="modal-bg">
+				<div class="modal">
+					<div class="modal-header">
+						<h1>Pay a Bill</h1>
+					</div>
+					<div class="modal-content">
+						<p>
+							Please follow the link below to make a secure payment via PayPal
+						</p>
+					</div>
+					<div class="modal-buttons">
+						<form
+							action="https://www.paypal.com/cgi-bin/webscr"
+							method="post"
+							target="_blank"
+						>
+							<input type="hidden" name="cmd" value="_s-xclick" />
+							<input
+								type="hidden"
+								name="hosted_button_id"
+								value="E4DZ8MMJKDMR2"
+							/>
+							<input
+								type="image"
+								src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif"
+								style="border: none"
+								name="submit"
+								alt="PayPal - The safer, easier way to pay online!"
+							/>
+							<img
+								alt=""
+								style="border: none"
+								src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+								width="1"
+								height="1"
+							/>
+						</form>
+					</div>
+					<span id="modal-close" class="modal-close">X</span>
+				</div>
+			</div>
+
+			<!-- Hero Content -->
+			<div class="content">
+				<h1>Tru<span class="text-primary">th</span>reads</h1>
+				<h2>Custom Apparel</h2>
+				<hr />
+				<div class="sub-heading">
+					<p>Screen-Printing</p>
+					<p>Embroidery</p>
+					<p>CADD Cut Vinyl</p>
+				</div>
+				<div class="hero-buttons">
+					<a href="#contact" class="btn btn-light"
+						><i class="fas fa-address-card"></i>Get In Touch</a
+					>
+					<button id="modal-btn" class="btn btn-primary">
+						<i class="fab fa-paypal"></i>Pay Bill
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- At a Glance -->
+			<section id="glance" class="glance">
+				<div class="flex-items">
+					<div class="flex-item">
+						<i class="fas fa-users fa-3x"></i>
+						<div>
+							<h3>People</h3>
+							<p>
+								With <span class="text-secondary">people at the heart</span> of
+								what we do, our passion is serving, not selling.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex-item">
+						<i class="fas fa-award fa-3x"></i>
+						<div>
+							<h3>Quality</h3>
+							<p>
+								<span class="text-secondary"
+									>Highest quality in custom apparel</span
+								>
+								is our standard, and we pride ourselves on meeting that mark
+								with every project we work on.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex-item">
+						<i class="fab fa-creative-commons-remix fa-3x"></i>
+						<div>
+							<h3>Creativity</h3>
+							<p>
+								We aim to deliver on our clients' vision with a creative aproach
+								to produce unique apparel that
+								<span class="text-secondary">stands apart from the rest</span>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section id="about" class="about flex-columns">
+				<div class="row">
+					<div class="column">
+						<div class="column-1">
+							<img src="images/screens-small.jpg" alt="Silk Screens" />
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-2 bg-dark">
+							<h2>Our Story</h2>
+							<p>
+								TruThreads started in 2013 with the goal of providing great
+								service and a great product, while keeping prices low. We have
+								grown every year by following these values.​
+								<br />
+								<br />
+								We're a family owned business that works hard, and loves what we
+								do. We have a passion for ministries, small businesses, and
+								helping people in any way we can. Our regular customers can
+								attest that they receive an old fashioned service with modern
+								techniques. What we quote for custom prints, is what you'll pay.
+								We don't add on surprise fees after the fact. That means no
+								screen fees, set up fees, or any other extra fees not outlined
+								in the quote. We are dedicated to offering the highest value,
+								while benefitting the customer first and foremost.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services -->
+			<section id="services" class="services section-padding">
+				<header class="section-header">
+					<h4>What We Offer</h4>
+					<h2>Our Services At a Glance</h2>
+					<p>
+						We provide a wide range of services to meet any apparel needs you
+						may have.
+					</p>
+				</header>
+				<div class="flex-items">
+					<div>
+						<img src="images/screen-print-copy.jpg" alt="Silk Screen Press" />
+						<h3>Screen-Printing</h3>
+						<p>
+							We use the highest quality inks and screens, printed on top-end,
+							industry fabrics, for a premium product that looks and feels
+							great.
+						</p>
+					</div>
+					<div>
+						<img src="images/thread-copy.jpg" alt="Embroidery Thread" />
+						<h3>Embroidery</h3>
+						<p>
+							With our state-of-the-art machine embroidery production, let us
+							refine your brand's look, and add a level of sophistication that
+							beautifully threaded embroidery can provide.
+						</p>
+					</div>
+					<div>
+						<img src="images/vinyl-cutter-copy.jpg" alt="Vinyl Cutter" />
+						<h3>CADD Cut Vinyl</h3>
+						<p>
+							Durability and presentation. With full color printing and
+							precision cutting, our vinyl will provide the look, and
+							practicality, you and your business need.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured -->
+			<section id="featured" class="featured flex-grid section-padding">
+				<header class="section-header">
+					<h2>Here is a look at some of our work</h2>
+				</header>
+				<div class="row">
+					<div class="column">
+						<a
+							href="images/featured/cases1.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases1.jpg" alt="" />
+						</a>
+						<a
+							href="images/featured/cases2.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="column">
+						<a
+							href="images/featured/cases3.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases3.jpg" alt="" />
+						</a>
+						<a
+							href="images/featured/cases4.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases4.jpg" alt="" />
+						</a>
+					</div>
+					<div class="column">
+						<a
+							href="images/featured/cases5.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases5.jpg" alt="" />
+						</a>
+						<a
+							href="images/featured/cases6.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases6.jpg" alt="" />
+						</a>
+					</div>
+					<div class="column">
+						<a
+							href="images/featured/cases7.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases7.jpg" alt="" />
+						</a>
+						<a
+							href="images/featured/cases8.jpg"
+							data-lightbox="featured"
+							data-title="Brief description of selected work"
+						>
+							<img src="images/featured/cases8.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact" class="contact flex-columns flex-reverse">
+				<div class="row">
+					<div class="column">
+						<div class="column-1">
+							<img src="images/contact.jpg" alt="Hello Sign" />
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-2 bg-light">
+							<h1>Contact</h1>
+							<p>
+								Fill out the form below for a quote or for general inquiries
+							</p>
+							<form action="" class="contact-form">
+								<div class="form-control">
+									<label for="name"></label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										placeholder="Enter Name"
+									/>
+								</div>
+								<div class="form-control">
+									<label for="email"></label>
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder="Enter Email"
+									/>
+								</div>
+								<div class="form-control">
+									<label for="message"></label>
+									<textarea
+										name="message"
+										id="message"
+										cols="30"
+										rows="10"
+										placeholder="Enter Message"
+									></textarea>
+								</div>
+								<input type="submit" value="Send" id="submit" class="btn" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer bg-dark">
+			<div class="social">
+				<a href="https://www.facebook.com/truthreadsprinting/" target="_blank"
+					><i class="fab fa-facebook fa-2x"></i
+				></a>
+				<a
+					href="https://www.instagram.com/truthreadsprinting/?hl=en"
+					target="_blank"
+					><i class="fab fa-instagram fa-2x"></i
+				></a>
+			</div>
+			<p>Copyright &copy; 2021 - TruThreads LLC</p>
+		</footer>
+	</body>
+</html>

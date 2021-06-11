@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+	color: #333;
+	line-height: 1.6;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+h1,
+h2 {
+	font-weight: 300;
+	line-height: 1.2;
+}
+p {
+	padding: 0.625rem 0;
+}
+img {
+	width: 100%;
+}
+
+textarea,
+input {
+	font-family: inherit;
+}
+
+/* Navbar */
+.navbar .logo {
+	width: 75px;
+	height: 75px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #333;
+	color: #fff;
+	opacity: 0.9;
+	width: 100%;
+	height: 5.2rem;
+	position: fixed;
+	top: 0;
+	padding: 0 1.8rem;
+	transition: 0.5s;
+}
+
+.navbar.top {
+	background: transparent;
+}
+
+.navbar ul a {
+	color: #fff;
+	padding: 0.6rem 1.2rem;
+	margin: 0 0.3rem;
+}
+
+.navbar ul a:hover {
+	border-bottom: #f06239 solid 1px;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+/* Header */
+.hero {
+	background: url('../images/screen1.jpg') no-repeat center center/cover;
+	height: 100vh;
+	position: relative;
+	color: #fff;
+}
+
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	padding: 0 1.2rem;
+}
+
+.hero .content h1 {
+	font-size: 6rem;
+	letter-spacing: 5px;
+}
+
+.hero .content h2 {
+	font-size: 3.5rem;
+	letter-spacing: 5px;
+}
+
+.hero .content hr {
+	width: 50vw;
+	margin: 2rem 0 0.5rem 0;
+}
+
+.sub-heading {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.hero .content .sub-heading p {
+	font-size: 1.1rem;
+	padding: 0 3.5rem;
+	margin-top: 1rem;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, 0.6);
+}
+
+.hero * {
+	z-index: 10;
+}
+
+/* Bring navbar forward */
+.navbar.front {
+	z-index: 20;
+	opacity: 0.96;
+}
+
+.hero .content .hero-buttons i {
+	padding-right: 3px;
+}
+
+.hero .content .hero-buttons a {
+	margin: 0 1.5rem;
+}
+.hero .content .hero-buttons button {
+	margin: 0 1.5rem;
+	font-size: 1rem;
+	padding: 0.95rem;
+}
+
+/* Modal */
+.modal-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgb(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.6s;
+}
+
+.modal-open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	width: 60%;
+	height: 40%;
+	background: #fff;
+	color: #333;
+	border-radius: 5px;
+}
+
+.modal .modal-header {
+	background-color: #212181;
+	color: white;
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.modal .modal-header h1 {
+	font-size: 2rem;
+}
+
+.modal p {
+	font-size: 1.2rem;
+	padding: 2rem 3rem;
+	text-align: center;
+}
+
+.modal .modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Glance */
+.glance {
+	padding: 2rem;
+}
+
+.glance h3 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.glance i {
+	background: #f06239;
+	color: #fff;
+	padding: 1rem;
+	min-width: 5.5rem;
+	text-align: center;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+/* About */
+.about p {
+	line-height: 1.5;
+}
+
+/* Services */
+.services .flex-items img {
+	border-radius: 5px;
+}
+
+/* Featured */
+.featured img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+/* Contact Form */
+.contact-form {
+	width: 100%;
+	padding: 1.25rem 0;
+}
+
+.contact-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+	margin-bottom: 1rem;
+}
+
+.contact-form input {
+	width: 100%;
+	padding: 0.4rem;
+	height: 2.5rem;
+	border: #474747 1px solid;
+}
+
+.contact-form textarea {
+	width: 100%;
+}
+
+.contact-form .btn {
+	padding: 0.75rem 0;
+	margin-top: 1.25;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline-color: #f06239;
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 8rem;
+}
+
+.footer a {
+	color: #fff;
+	padding: 0 1rem;
+}
+
+.footer a:hover {
+	color: #f06239;
+}
+
+/* MOBILE STYLES */
+
+/* Tablet */
+@media (max-width: 768px) {
+	.navbar.mobile {
+		flex-direction: column;
+		height: 10rem;
+		padding: 1.25rem;
+	}
+
+	.hero .content h1 {
+		font-size: 5rem;
+		margin-top: 6rem;
+	}
+
+	.hero .content h2 {
+		font-size: 3rem;
+	}
+
+	.hero .content .sub-heading {
+		margin-bottom: 4rem;
+	}
+
+	.flex-items {
+		flex-direction: column;
+	}
+
+	.flex-items > div {
+		width: 100%;
+	}
+
+	.flex-columns .column,
+	.flex-grid .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.contact.flex-columns .column-1 {
+		display: none;
+	}
+}
+
+/* Phone */
+@media (max-width: 578px) {
+	.navbar.mobile ul a {
+		font-size: 0.8rem;
+	}
+
+	.hero .content h1 {
+		font-size: 3.5rem;
+		margin-top: 12.8rem;
+	}
+
+	.hero .content h2 {
+		font-size: 2rem;
+	}
+
+	.hero .content .sub-heading {
+		margin-bottom: 1.5rem;
+	}
+
+	.hero .content .sub-heading p {
+		font-size: 0.9rem;
+		padding: 0 3rem;
+	}
+
+	.content .hero-buttons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hero .content .hero-buttons a {
+		margin: 1.5rem 0;
+	}
+
+	.btn {
+		padding: 0.4rem 1rem;
+		font-size: 0.9rem;
+	}
+}
+
+/* Small Phone */
+@media (max-width: 456px) {
+	.navbar.mobile {
+		flex-direction: row;
+		height: 15rem;
+	}
+
+	.navbar.mobile ul {
+		flex-direction: column;
+	}
+
+	.navbar.mobile ul a {
+		font-size: 1rem;
+	}
+
+	.navbar.mobile ul li {
+		padding: 0.5rem 0;
+	}
+
+	.hero .content h1 {
+		font-size: 3rem;
+		margin-top: 16rem;
+	}
+
+	.hero .content h2 {
+		font-size: 1.6rem;
+	}
+
+	.hero .content .sub-heading {
+		flex-direction: column;
+		margin-bottom: 0.3rem;
+		justify-content: center;
+	}
+
+	.hero .content .sub-heading p {
+		padding: 0.2rem 0;
+		margin: 0;
+	}
+
+	.hero .content hr {
+		margin: 0.5rem 0;
+	}
+
+	.hero .content .hero-buttons a {
+		margin: 1rem 0;
+	}
+}
