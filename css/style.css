@@ -42,6 +42,11 @@ input {
 	font-family: inherit;
 }
 
+textarea {
+	resize: none;
+	padding: 0.4rem;
+}
+
 /* Navbar */
 .navbar .logo {
 	width: 75px;
