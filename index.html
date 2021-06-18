@@ -31,20 +31,24 @@
 	<body id="home">
 		<!-- Navbar -->
 		<header class="hero">
-			<div id="navbar" class="navbar top mobile">
+			<div id="navbar" class="navbar top">
 				<a class="logo" href="#home"
-					><img src="images/logo.png" alt="Truthreads Logo"
+					><img id="logo-link" src="images/logo.png" alt="Truthreads Logo"
 				/></a>
-				<nav>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#featured">Featured</a></li>
-						<li><a href="#contact">Contact</a></li>
+				<nav id="nav">
+					<button id="burger" class="burger">
+						<i class="fas fa-bars fa-3x"></i>
+					</button>
+					<ul id="nav-list" class="nav-list">
+						<li id="home-link"><a href="#home">Home</a></li>
+						<li id="about-link"><a href="#about">About Us</a></li>
+						<li id="services-link"><a href="#services">Services</a></li>
+						<li id="featured-link"><a href="#featured">Featured</a></li>
+						<li id="contact-link"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
+			<div id="backdrop"></div>
 
 			<!-- Payment Modal -->
 			<div id="modal-bg" class="modal-bg">

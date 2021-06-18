@@ -47,6 +47,19 @@ textarea {
 	padding: 0.4rem;
 }
 
+/* Mobile Nav */
+.burger {
+	background: transparent;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+
+.burger:focus {
+	outline: none;
+}
+
 /* Navbar */
 .navbar .logo {
 	width: 75px;
@@ -149,7 +162,7 @@ textarea {
 
 /* Bring navbar forward */
 .navbar.front {
-	z-index: 20;
+	z-index: 40;
 	opacity: 0.96;
 }
 
@@ -326,7 +339,7 @@ textarea {
 
 /* Tablet */
 @media (max-width: 768px) {
-	.navbar.mobile {
+	.navbar {
 		flex-direction: column;
 		height: 10rem;
 		padding: 1.25rem;
@@ -366,7 +379,7 @@ textarea {
 
 /* Phone */
 @media (max-width: 578px) {
-	.navbar.mobile ul a {
+	.navbar ul a {
 		font-size: 0.8rem;
 	}
 
@@ -404,31 +417,74 @@ textarea {
 }
 
 /* Small Phone */
-@media (max-width: 456px) {
-	.navbar.mobile {
+@media (max-width: 518px) {
+	.navbar {
 		flex-direction: row;
-		height: 15rem;
+		height: 6rem;
+		padding: 0 2.5rem;
+		/* position: relative; */
 	}
 
-	.navbar.mobile ul {
+	.navbar .nav-list {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		align-items: center;
+	}
+
+	.nav-list.show {
+		display: flex;
 		flex-direction: column;
 	}
 
-	.navbar.mobile ul a {
+	.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: #333;
+		opacity: 0.9;
+		z-index: 30;
+	}
+
+	.navbar.mobile-navbar {
+		z-index: 40;
+		background-color: transparent;
+		flex-direction: column;
+		padding: 1rem 0;
+	}
+
+	nav.mobile-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.navbar .nav-list {
+		padding-top: 1rem;
+	}
+
+	.navbar .nav-list a {
 		font-size: 1rem;
 	}
 
-	.navbar.mobile ul li {
-		padding: 0.5rem 0;
+	.navbar ul li {
+		padding: 1rem 0;
 	}
 
 	.hero .content h1 {
-		font-size: 3rem;
-		margin-top: 16rem;
+		font-size: 3.2rem;
+		margin-top: 6rem;
 	}
 
 	.hero .content h2 {
 		font-size: 1.6rem;
+		padding-bottom: 1rem;
 	}
 
 	.hero .content .sub-heading {
@@ -438,7 +494,8 @@ textarea {
 	}
 
 	.hero .content .sub-heading p {
-		padding: 0.2rem 0;
+		font-size: 1rem;
+		padding: 0.4rem 0;
 		margin: 0;
 	}
 
@@ -446,7 +503,19 @@ textarea {
 		margin: 0.5rem 0;
 	}
 
+	.hero .content .hero-buttons button {
+		margin-top: 1.2rem;
+	}
+
 	.hero .content .hero-buttons a {
 		margin: 1rem 0;
+	}
+
+	.modal {
+		width: 70%;
+		height: 55%;
+		background: #fff;
+		color: #333;
+		border-radius: 5px;
 	}
 }

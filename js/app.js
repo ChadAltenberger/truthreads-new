@@ -21,6 +21,49 @@ window.onscroll = function () {
 	}
 };
 
+// Burger Menu Toggle
+const burger = document.getElementById('burger');
+const navList = document.getElementById('nav-list');
+const backdrop = document.getElementById('backdrop');
+const logoLink = document.getElementById('logo-link');
+const homeLink = document.getElementById('home-link');
+const aboutLink = document.getElementById('about-link');
+const servicesLink = document.getElementById('services-link');
+const featuredLink = document.getElementById('featured-link');
+const contactLink = document.getElementById('contact-link');
+const nav = document.getElementById('nav');
+
+burger.addEventListener('click', () => {
+	const navbar = document.getElementById('navbar');
+
+	navList.classList.toggle('show');
+	backdrop.classList.toggle('active');
+	navbar.classList.toggle('mobile-navbar');
+	nav.classList.toggle('mobile-nav');
+});
+
+// Nav Links Toggle
+function toggleNav() {
+	navList.classList.toggle('show');
+	backdrop.classList.toggle('active');
+	navbar.classList.toggle('mobile-navbar');
+	nav.classList.toggle('mobile-nav');
+}
+
+homeLink.addEventListener('click', toggleNav);
+aboutLink.addEventListener('click', toggleNav);
+servicesLink.addEventListener('click', toggleNav);
+featuredLink.addEventListener('click', toggleNav);
+contactLink.addEventListener('click', toggleNav);
+logoLink.addEventListener('click', () => {
+	if (backdrop.className === 'active') {
+		backdrop.classList.remove('active');
+		navList.classList.toggle('show');
+		navbar.classList.toggle('mobile-navbar');
+		nav.classList.toggle('mobile-nav');
+	}
+});
+
 // Modal Toggle //
 const modalBtn = document.getElementById('modal-btn');
 const modalBg = document.getElementById('modal-bg');
